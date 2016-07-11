@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="171" id="KGk-i7-Jjw" customClass="MyHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eiM-8O-22E">
+                        <rect key="frame" x="120" y="8" width="80" height="100"/>
+                        <color key="backgroundColor" red="0.94913309970000004" green="1" blue="0.2314870151" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Fzy-Lv-aaJ"/>
+                            <constraint firstAttribute="width" constant="80" id="Yi9-Of-pBN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQP-Xg-3it">
+                        <rect key="frame" x="80" y="124" width="160" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AK5-Ey-Xl8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eiM-8O-22E" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7ba-7w-tnV"/>
+                    <constraint firstItem="xQP-Xg-3it" firstAttribute="top" secondItem="eiM-8O-22E" secondAttribute="bottom" constant="16" id="INP-gR-NNf"/>
+                    <constraint firstAttribute="trailing" secondItem="xQP-Xg-3it" secondAttribute="trailing" constant="80" id="JgE-Im-wR9"/>
+                    <constraint firstItem="xQP-Xg-3it" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="qV0-Om-rho"/>
+                    <constraint firstItem="eiM-8O-22E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vIB-0W-Glw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="eiM-8O-22E" id="hfC-D8-a13"/>
+                <outlet property="usernameLabel" destination="xQP-Xg-3it" id="1EE-3f-Xwz"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="510.5"/>
+        </tableViewCell>
+    </objects>
+</document>
